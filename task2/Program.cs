@@ -5,23 +5,7 @@
 b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 */
 
-/*
-double checKoordinats(double arg)
-{
-double x=0;
-double y=0;
-  if(k1==k2)
-  {
-  Console.WriteLine($"paralelny");
-  }
-    if(b2<k1)
-    {
-    Console.WriteLine($"ne peresekautsa");
-    }
-  double x = -(b1-b2)/(k1-k2);
-  double y = k1*x+b1;
-}
-*/
+
 
 Console.WriteLine("input b1: ");
 double b1 = Convert.ToDouble(Console.ReadLine());
@@ -35,5 +19,5 @@ double k2 = Convert.ToDouble(Console.ReadLine());
 double x = -(b1-b2)/(k1-k2);
 double y = k1*x+b1;
 
-Console.WriteLine($"[{x},{y}]");
+Console.WriteLine($"koordinats point is : [{x},{y}]");
 
