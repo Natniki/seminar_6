@@ -4,10 +4,11 @@
 1, -7, 567, 89, 223-> 3
 */
 
-int GetNumber(string description)
+int GetNumber(string msn)
 {
     int number;
-    Console.Write($"{description}=> ");
+    Console.Write($"{msn}=> ");
+
     while(true)
     {
         string temp = Console.ReadLine();
@@ -44,8 +45,9 @@ int CountNeg(int[]arr)
    return count;
 }
 
-int length = GetNumber("input numbers: ");
-int[] myArrey = CreaArrey(length);
+int len = GetNumber("input numbers: ");
+Console.ReadLine();
+int[] myArrey = CreaArrey(len);
 Console.WriteLine(string.Join(", ",myArrey));
 int res = CountNeg(myArrey);
 Console.WriteLine($"kolichestvo negativnyh elementov: -> +({res})");
